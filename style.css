@@ -365,16 +365,14 @@ ul {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: auto;
-  /* Allow content to dictate height on small screens */
+  min-height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   overflow: hidden;
-  padding-top: 120px;
-  /* Safe space from the fixed navbar */
-  padding-bottom: 80px;
+  padding-top: 220px;
+  padding-bottom: 100px;
 }
 
 .hero-media {
@@ -419,7 +417,7 @@ ul {
   position: relative;
   z-index: 2;
   padding: 0 max(48px, 8vw);
-  max-width: 760px;
+  max-width: 850px;
 }
 
 .hero-tag {
