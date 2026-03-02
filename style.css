@@ -365,14 +365,17 @@ ul {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 800px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  /* Back to center for better balance */
   align-items: flex-start;
   overflow: hidden;
-  padding-top: 220px;
-  padding-bottom: 100px;
+  padding-top: 140px;
+  /* Safe space for logo */
+  padding-bottom: 160px;
+  /* Safe space for stats bar */
 }
 
 .hero-media {
