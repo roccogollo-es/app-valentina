@@ -365,17 +365,16 @@ ul {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 700px;
+  min-height: 850px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* Back to center for better balance */
+  justify-content: flex-start;
   align-items: flex-start;
   overflow: hidden;
-  padding-top: 140px;
-  /* Safe space for logo */
-  padding-bottom: 160px;
-  /* Safe space for stats bar */
+  padding-top: 240px;
+  /* Safe space from the Top Logo / Menu */
+  padding-bottom: 200px;
+  /* Safe space from the Bottom Stats bar */
 }
 
 .hero-media {
@@ -445,11 +444,12 @@ ul {
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  /* Reduced from 3.5rem/8vw/7rem to ensure long lines fit the screen */
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.15;
   color: var(--white);
-  margin-bottom: 28px;
+  margin-bottom: 32px;
   animation: fadeUp 1.2s ease both;
   animation-delay: 0.2s;
 }
