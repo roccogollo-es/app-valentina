@@ -365,15 +365,16 @@ ul {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 850px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  /* Back to center for premium balance */
   align-items: flex-start;
   overflow: hidden;
-  padding-top: 240px;
+  padding-top: 140px;
   /* Safe space from the Top Logo / Menu */
-  padding-bottom: 200px;
+  padding-bottom: 140px;
   /* Safe space from the Bottom Stats bar */
 }
 
@@ -1644,13 +1645,18 @@ a.cd-value:hover {
     --section-pad: 60px;
   }
 
-  #navbar {
-    padding: 0 24px;
+  .hero {
+    padding-top: 110px;
+    /* Tighter on mobile */
+    padding-bottom: 60px;
+    height: auto;
+    min-height: 100vh;
   }
 
   .hero-content {
     padding: 0 24px;
-    padding-top: 80px;
+    padding-top: 0;
+    /* Removing extra padding that was pushing it down */
   }
 
   .hero-stats {
