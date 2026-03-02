@@ -365,12 +365,16 @@ ul {
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 700px;
+  min-height: auto;
+  /* Allow content to dictate height on small screens */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
+  padding-top: 120px;
+  /* Safe space from the fixed navbar */
+  padding-bottom: 80px;
 }
 
 .hero-media {
@@ -415,8 +419,6 @@ ul {
   position: relative;
   z-index: 2;
   padding: 0 max(48px, 8vw);
-  padding-top: 140px;
-  /* Increased to prevent overlap with logo */
   max-width: 760px;
 }
 
