@@ -415,7 +415,8 @@ ul {
   position: relative;
   z-index: 2;
   padding: 0 max(48px, 8vw);
-  padding-top: 80px;
+  padding-top: 140px;
+  /* Increased to prevent overlap with logo */
   max-width: 760px;
 }
 
